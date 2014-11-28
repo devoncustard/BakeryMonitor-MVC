@@ -49,3 +49,5 @@ Temporary Items
 .manifest
 bin/debug
 bin/release
+obj/debug
+obj/release

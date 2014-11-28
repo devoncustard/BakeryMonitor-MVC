@@ -68,11 +68,13 @@ namespace BakeryMonitor_MVC
                 btnEnableLogging.Text = "Start Logging";
                 writelogs.Invoke(this, new ViewEventArgs2(false));
                 logging = false;
+                slbLoggingStatus.Text = "Logging Disabled";
             }
             else
             {
                 btnEnableLogging.Text = "Stop Logging";
                 writelogs.Invoke(this, new ViewEventArgs2(true));
+                slbLoggingStatus.Text = String.Format("Logging enabled. Writing to {0}", Properties.Settings.Default.LogFolder);
                 logging = true;
 
             }
