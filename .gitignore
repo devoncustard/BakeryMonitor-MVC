@@ -41,3 +41,11 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#Build output
+.exe
+.vshost
+.vshost.config
+.manifest
+bin/debug
+bin/release
